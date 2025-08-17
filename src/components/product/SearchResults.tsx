@@ -51,7 +51,7 @@ export default function SearchResults() {
           ))}
         </div>
       ) : (
-        <p>No products found.</p>
+        <p>Out of stock.</p>
       )}
     </section>
   );
