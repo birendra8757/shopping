@@ -1,0 +1,49 @@
+.thunk-banner-wrap {
+  position: relative; /* Needed for pseudo-elements to overlay */
+  overflow: hidden;
+}
+
+.thunk-banner-wrap a {
+  display: block;
+  position: relative;
+}
+
+.thunk-banner-wrap a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;   /* Full cover */
+  height: 100%;  /* Full cover */
+  background: rgba(0, 0, 0, 0.4); /* Dark shade */
+  opacity: 0;    /* Hidden initially */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.thunk-banner-wrap a:hover:before {
+  opacity: 1; /* Show on hover */
+}
+
+
+.thunk-banner-wrap img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.thunk-banner-wrap a:hover img {
+  transform: scale(1.05); /* Slight zoom */
+}
+
+.thunk-banner-wrap a:after {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+}
+.thunk-banner-wrap img {
+    border-radius: 5px;
+}
+
+.thunk-banner-wrap a {
+    position: relative;
+    display: block;
+}
