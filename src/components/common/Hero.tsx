@@ -2,7 +2,7 @@ import { DollarSign, CheckCircle, User, Phone } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="bg-white rounded-2xl shadow-sm max-w-7xl mx-auto my-6 p-6">
+    <section className="bg-white rounded-2xl shadow-sm max-w-7xl mx-auto my-6 p-6 mobile-margin-top">
       {/* Top navigation links */}
       {/* <nav className="flex flex-wrap justify-center space-x-6 text-sm mb-6">
         {[

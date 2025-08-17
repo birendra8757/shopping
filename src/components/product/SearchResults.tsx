@@ -11,7 +11,7 @@ export default function SearchResults() {
   );
 
   return (
-    <section className="max-w-7xl mx-auto my-10 px-6">
+    <section className="max-w-7xl mx-auto my-10 px-6 mobile-margin-top">
       <h2 className="text-xl font-semibold border-b pb-2 mb-6">
         Search Results for "{query}"
       </h2>

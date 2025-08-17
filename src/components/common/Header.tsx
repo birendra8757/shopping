@@ -51,15 +51,15 @@ export default function Header() {
                   href='tel:+18444033240'
                   className='text-sm whitespace-nowrap  hover:text-blue-600'
                 >
-                  +1 (844)-403-3240 /
+                  +1 (844)-403-3240 
                 </a>
-                <a
+                {/* <a
                   href='mailto:abc@gmail.com'
                   className='text-sm flex items-center whitespace-nowrap  hover:text-blue-600'
                 >
                   <Mail className='h-4 w-4 mr-1 text-gray-500 ' />
                   abc@gmail.com
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

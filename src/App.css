@@ -47,3 +47,9 @@
     position: relative;
     display: block;
 }
+
+@media only screen and (max-width: 910px) {
+	.mobile-margin-top{
+        margin-top: 140px;
+    }
+}
