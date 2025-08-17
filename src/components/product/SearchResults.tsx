@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { products } from "../../data/product";
-
+import { stringToSlug } from "../../utils/stringToSlug";
 export default function SearchResults() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
@@ -19,7 +19,7 @@ export default function SearchResults() {
       {filtered.length > 0 ? (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {filtered.map((product) => (
-             <Link key={product.id} to={"/product/" + product.id}>
+            <Link key={product.id} to={"/product/" + stringToSlug(product.name)}>
             <div
               key={product.id}
               className="border rounded-lg relative overflow-hidden bg-white hover:shadow-lg transition"
